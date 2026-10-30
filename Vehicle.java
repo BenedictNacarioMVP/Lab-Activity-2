@@ -1,4 +1,4 @@
-public class Vehicle {
+public abstract class Vehicle {
     private String brand;
     private String model;
     private int year;
@@ -29,7 +29,10 @@ public class Vehicle {
         
     }
 
-
+    public abstract void moveForward();
+    public abstract void moveBackward();
+    public abstract void moveLeft();
+    public abstract void moveRight();
 
     public int calculateAge() {
         return 2026 - getYear();
